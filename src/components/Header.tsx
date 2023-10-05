@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className=" bg-slate-50 p-2 text-black opacity-90 shadow-sm">
+    <header className="relative   bg-default  p-2 text-black shadow-sm ">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex w-full items-center justify-center">
           <Image src="/images/rcc-favicon.png" alt="RCCのfaviconです" width={40} height={40} className="mr-5" />
