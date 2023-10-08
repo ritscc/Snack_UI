@@ -1,14 +1,17 @@
 import React from "react";
-
+import SearchBar from "./SearchBar";
+import ChatBar from "./ChatBar";
 const Chat = () => {
   return (
-    <div className="hide-scrollbar h-screen w-full overflow-y-auto   bg-chat">
-      Chat
-      <div className="mt-40">aaa</div>
-      <div className="mt-40">aaa</div>
-      <div className="mt-40">aaa</div>
-      <div className="mt-40">aaa</div>
-      <div className="mt-40">aaa</div>
+    <div className="hidden-scrollbar h-screen w-full overflow-y-scroll">
+      <SearchBar/>
+      {/* ここにチャットを表示するコンポーネントを作成
+      最新のチャットを表示するようにスクロール */}
+        <div className="m-40">aaa</div>
+        <div className="m-40">aaa</div>
+        <div className="m-40">aaa</div>
+        <div className="m-40">aaa</div>
+      <ChatBar/>
     </div>
   );
 };

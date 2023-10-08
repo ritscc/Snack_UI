@@ -9,10 +9,12 @@
 }
 
 /* スクロールバーを非表示にするスタイル */
-.hide-scrollbar::-webkit-scrollbar {
-  width: 0.5em;
-}
+  .hidden-scrollbar {
+    -ms-overflow-style: none; /* IE, Edge 対応 */
+    scrollbar-width: none; /* Firefox 対応 */
+  }
+  .hidden-scrollbar::-webkit-scrollbar {
+    /* Chrome, Safari 対応 */
+    display: none;
+  }
 
-.hide-scrollbar::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
