@@ -1,10 +1,25 @@
-import React from 'react'
+import React from "react";
 
 export default function chatHomeCenter() {
-    return (
-        <div>        <div className="p-2">chatHomeCenter</div>
-            <div className="border-4"><input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"></input></div>
+  return (
+    <div className="py-20 h-screen bg-gray-300 px-2">
+      <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
+        <div className="md:flex">
+          <div className="w-full p-3">
+            <div className="relative">
+              <i className="absolute fa fa-search text-gray-400 top-5 left-4"></i>
+              <input
+                type="text"
+                className="bg-white h-14 w-full px-12 rounded-lg focus:outline-none hover:cursor-pointer"
+                name=""
+              ></input>
+              <span className="absolute top-4 right-5 border-l pl-4">
+                <i className="fa fa-microphone text-gray-500 hover:text-green-500 hover:cursor-pointer"></i>
+              </span>
+            </div>
+          </div>
         </div>
-
-    )
+      </div>
+    </div>
+  );
 }
