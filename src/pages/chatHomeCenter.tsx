@@ -3,6 +3,7 @@ import React from "react";
 export default function chatHomeCenter() {
   return (
     <div className="py-20 h-screen bg-gray-300 px-2">
+      <h1>変更したよ</h1>
       <div className="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
         <div className="md:flex">
           <div className="w-full p-3">
